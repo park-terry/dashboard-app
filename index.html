@@ -4,16 +4,211 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Momentum App</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Dashboard</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input required maxlength="15" type="text" placeholder="Username" />
-      <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <main>
+      <nav class="navbar">
+        <ul class="tap-menu">
+          <li class="active"><a href="#tap-1"><i class="fas fa-user"></i></a></li>
+          <li><a href="#tap-2"><i class="fas fa-palette"></i></a></li>
+        </ul>
+        <ul class="nav-menu">
+          <li><a href="https://www.google.com/" target="_blank"><i class="fab fa-google"/></i></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"/></i></a></li>
+          <li><i class="fas fa-sign-out-alt log-out"></i></li>
+        </ul>
+      </nav>
+      <section id="tap-1" class="show">
+        <div class="profile-page">
+          <div class="profile-container">
+            <div class="profile-box">
+              <div class="box-left">
+                <form id="login-form" class="hidden">
+                  <input required maxlength="15" type="text" placeholder="Username" />
+                </form>
+                <span class="greeting hidden"></span>
+              </div>
+            </div>
+            <div class="box-left">
+              <span class="today">0000. 00. 00</span>
+              <span class="clock">00 : 00 : 00</span>
+            </div>
+            <div class="box-left">
+              <div class="locate">
+                <span>City</span>
+                <span>Temperature</span>
+              </div>
+            </div>
+          </div>
+          <div class="goals-container">
+            <div class="goal-form-box">
+              <div class="box-right-top">
+                <span>Daily Goals</span>
+                <form class="goal-form">
+                  <input required type="text" placeholder="Write a Goal and Press Enter" />
+                </form>
+              </div>
+            </div>
+            <div class="goal-list-box">
+              <div class="bot-right-bot">
+                <ul class="goal-list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tap-2" class="hidden">
+        <div class="canvas-container">
+          <div class="canvas-container2">
+            <div class="palette">
+              <div class="colors-column">
+                <div class="color" style="background-color: #f44336;"></div>
+                <div class="color" style="background-color: #e91e63;"></div>
+                <div class="color" style="background-color: #9c27b0;"></div>
+                <div class="color" style="background-color: #673ab7;"></div>
+                <div class="color" style="background-color: #3f51b5;"></div>
+                <div class="color" style="background-color: #2196f3;"></div>
+                <div class="color" style="background-color: #03a9f4;"></div>
+                <div class="color" style="background-color: #00bcd4;"></div>
+                <div class="color" style="background-color: #009688;"></div>
+                <div class="color" style="background-color: #4caf50;"></div>
+              </div>
+              <div class="colors-column">
+                <div class="color" style="background-color: #e53935;"></div>
+                <div class="color" style="background-color: #d81b60;"></div>
+                <div class="color" style="background-color: #8e24aa;"></div>
+                <div class="color" style="background-color: #5e35b1;"></div>
+                <div class="color" style="background-color: #3949ab;"></div>
+                <div class="color" style="background-color: #1e88e5;"></div>
+                <div class="color" style="background-color: #039be5;"></div>
+                <div class="color" style="background-color: #00acc1;"></div>
+                <div class="color" style="background-color: #00897b;"></div>
+                <div class="color" style="background-color: #43a047;"></div>
+              </div>
+              <div class="colors-column">
+                <div class="color" style="background-color: #d32f2f;"></div>
+                <div class="color" style="background-color: #c2185b;"></div>
+                <div class="color" style="background-color: #7b1fa2;"></div>
+                <div class="color" style="background-color: #512da8;"></div>
+                <div class="color" style="background-color: #303f9f;"></div>
+                <div class="color" style="background-color: #1976d2;"></div>
+                <div class="color" style="background-color: #0288d1;"></div>
+                <div class="color" style="background-color: #0097a7;"></div>
+                <div class="color" style="background-color: #00796b;"></div>
+                <div class="color" style="background-color: #388e3c;"></div>
+              </div>
+              <div class="colors-column">
+                <div class="color" style="background-color: #c62828;"></div>
+                <div class="color" style="background-color: #ad1457;"></div>
+                <div class="color" style="background-color: #6a1b9a;"></div>
+                <div class="color" style="background-color: #4527a0;"></div>
+                <div class="color" style="background-color: #283593;"></div>
+                <div class="color" style="background-color: #1565c0;"></div>
+                <div class="color" style="background-color: #0277bd;"></div>
+                <div class="color" style="background-color: #00838f;"></div>
+                <div class="color" style="background-color: #00695c;"></div>
+                <div class="color" style="background-color: #2e7d32;"></div>
+              </div>
+              <div class="colors-column">
+                <div class="color" style="background-color: #b71c1c;"></div>
+                <div class="color" style="background-color: #880e4f;"></div>
+                <div class="color" style="background-color: #4a148c;"></div>
+                <div class="color" style="background-color: #311b92;"></div>
+                <div class="color" style="background-color: #1a237e;"></div>
+                <div class="color" style="background-color: #0d47a1;"></div>
+                <div class="color" style="background-color: #01579b;"></div>
+                <div class="color" style="background-color: #006064;"></div>
+                <div class="color" style="background-color: #004d40;"></div>
+                <div class="color" style="background-color: #1b5e20;"></div>
+              </div>
+            </div>
+            <div class="canvas-box">
+              <div class="button-form">
+                <button class="fill-btn">fill</button>
+                <button class="save-btn">save</button>
+              </div>
+              <canvas class="canvas"></canvas>
+            </div>
+            <div class="palette">
+              <div class="range-form">
+                <input class="input-range" type="range" min="1" max="20" value="10.5" step="0.1">
+                <div class="current-color-display">
+                  <input type="color" class="current-color"></input>
+                </div>
+              </div>
+  
+              <div class="colors-row">
+                <div class="colors-column">
+                  <div class="color" style="background-color: #8bc34a;"></div>
+                  <div class="color" style="background-color: #cddc39;"></div>
+                  <div class="color" style="background-color: #ffeb3b;"></div>
+                  <div class="color" style="background-color: #ffc107;"></div>
+                  <div class="color" style="background-color: #ff9800;"></div>
+                  <div class="color" style="background-color: #ff5722;"></div>
+                  <div class="color" style="background-color: #795548;"></div>
+                  <div class="color" style="background-color: #9e9e9e;"></div>
+                  <div class="color" style="background-color: #607d8b;"></div>
+                </div>
+                <div class="colors-column">
+                  <div class="color" style="background-color: #7cb342;"></div>
+                  <div class="color" style="background-color: #c0ca33;"></div>
+                  <div class="color" style="background-color: #fdd835;"></div>
+                  <div class="color" style="background-color: #ffb300;"></div>
+                  <div class="color" style="background-color: #fb8c00;"></div>
+                  <div class="color" style="background-color: #f4511e;"></div>
+                  <div class="color" style="background-color: #6d4c41;"></div>
+                  <div class="color" style="background-color: #757575;"></div>
+                  <div class="color" style="background-color: #546e7a;"></div>
+                </div>
+                <div class="colors-column">
+                  <div class="color" style="background-color: #689f38;"></div>
+                  <div class="color" style="background-color: #afb42b;"></div>
+                  <div class="color" style="background-color: #fbc02d;"></div>
+                  <div class="color" style="background-color: #ffa000;"></div>
+                  <div class="color" style="background-color: #f57c00;"></div>
+                  <div class="color" style="background-color: #e64a19;"></div>
+                  <div class="color" style="background-color: #5d4037;"></div>
+                  <div class="color" style="background-color: #616161;"></div>
+                  <div class="color" style="background-color: #455a64;"></div>
+                </div>
+                <div class="colors-column">
+                  <div class="color" style="background-color: #558b2f;"></div>
+                  <div class="color" style="background-color: #9e9d24;"></div>
+                  <div class="color" style="background-color: #f9a825;"></div>
+                  <div class="color" style="background-color: #ff8f00;"></div>
+                  <div class="color" style="background-color: #ef6c00;"></div>
+                  <div class="color" style="background-color: #d84315;"></div>
+                  <div class="color" style="background-color: #4e342e;"></div>
+                  <div class="color" style="background-color: #424242;"></div>
+                  <div class="color" style="background-color: #37474f;"></div>
+                </div>
+                <div class="colors-column">
+                  <div class="color" style="background-color: #33691e;"></div>
+                  <div class="color" style="background-color: #827717;"></div>
+                  <div class="color" style="background-color: #f57f17;"></div>
+                  <div class="color" style="background-color: #ff6f00;"></div>
+                  <div class="color" style="background-color: #e65100;"></div>
+                  <div class="color" style="background-color: #bf360c;"></div>
+                  <div class="color" style="background-color: #3e2723;"></div>
+                  <div class="color" style="background-color: #212121;"></div>
+                  <div class="color" style="background-color: #263238;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </main>
 
-    <script src="app.js"></script>
+    <script src="/js/greetings.js"></script>
+    <script src="/js/clock.js"></script>
+    <script src="/js/infos.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/goals.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/canvas.js"></script>
   </body>
 </html>

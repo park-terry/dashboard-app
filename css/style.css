@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap");
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 900px;
+  background: beige;
+  border-radius: 2rem;
+}
+
+/********************* navbar *********************/
+.navbar {
+  width: 5rem;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.navbar ul li {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.navbar ul li:hover {
+  background-color: white;
+  border-radius: 16px;
+}
+
+.active {
+  background-color: white;
+  border-radius: 16px;
+  transform: scale(0.9);
+}
+
+.navbar i {
+  font-size: 2rem;
+  color: navy;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+/********************* tap-1 *********************/
+section {
+  width: 1200px;
+  height: 900px;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 900px;
+}
+
+#tap-1 .box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.profile-box {
+  background-color: beige;
+}
+
+.profile-box input {
+  width: 300px;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: navy;
+  caret-color: navy;
+  border: navy 3px solid;
+  border-radius: 10px;
+}
+
+.greeting {
+  width: 300px;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: navy;
+}
+
+.today,
+.clock {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin: 10px 0;
+  font-family: "LAB디지털";
+}
+
+.locate {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.locate span:first-child {
+  font-size: 2rem;
+}
+
+.locate span:last-child {
+  margin: 20px 0;
+}
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 900px;
+}
+
+#tap-1 .box-right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.goal-form-box {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: navy;
+}
+
+.goal-form input {
+  width: 500px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: navy;
+  caret-color: navy;
+  border: navy 3px solid;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+#tap-1 .box-right-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.goal-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 800px;
+  height: 800px;
+  padding: 0em 1em;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+  color: navy;
+}
+
+.goal-list li {
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.goal-list li button {
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: navy;
+}
+
+/********************* tap-2 *********************/
+.canvas-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+.canvas-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  padding: 0 2em;
+  background-color: beige;
+  border-radius: 1rem;
+}
+
+.canvas {
+  width: 600px;
+  height: 600px;
+  background-color: #f0edff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
+  border-radius: 10px;
+}
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.palette:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.button-form button {
+  width: 4rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #f0edff;
+  border-radius: 4px;
+  padding: 0.5em;
+  cursor: pointer;
+  color: #6667ab;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.palette:last-child .range-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.palette:last-child input {
+  width: 160px;
+  height: 40px;
+}
+
+.palette:last-child .current-color {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.current-color-display {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+}
+
+.palette:last-child .colors-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.colors-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.color-radius {
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
